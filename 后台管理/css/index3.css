@@ -1,0 +1,29 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+nav{
+	width: 100%;
+	height: 40px;
+}
+.wraper_nav,.list-left{
+	background: #0767c8;
+	background: -webkit-linear-gradient(top, #086ed5, #055db5);
+	background: linear-gradient(to bottom, #086ed5, #055db5);
+	border-bottom: 1px solid #044e97;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, .25), inset 0 1px 0 rgba(255, 255, 255, .15);
+}
+.navbar-nav a {
+	color: #FFF !important;
+}
+.navbar-brand img{
+	width: 40px;
+	height: 40px;
+	margin-top: -10px;
+}
+.input-group{
+	width: 400px;
+}
+aside{
+	width: 20%;
+}

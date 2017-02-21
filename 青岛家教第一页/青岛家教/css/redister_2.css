@@ -1,0 +1,110 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+	color: #778899;
+}
+body{
+	background: url(../image/bg.jpg);
+}
+.warp{
+	width: 710px;
+	border: 1px solid red;
+	border-radius: 20px/20px;
+	margin: 10px auto;
+	background: white;
+}
+header,article,footer{
+	width: 652px;
+	margin-left: 29px;
+}
+header{
+	height: 82px;
+}
+.logo{
+	width: 180px;
+	height: 76px;
+	padding: 3px 40px 3px 0;
+	float: left;
+	background: url(../image/qdjjlogo.gif) no-repeat content-box;
+}
+.nav_list{
+	width: 432px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.nav_list ul{
+    position: absolute;
+	bottom: 4px;
+	right: 0;
+}
+.nav_list li{
+	list-style: none;
+	margin-left: 14px;
+	float: right;
+	top: 62px;
+}
+article span{
+    color: red;
+}
+article em{
+	font-style: normal;
+	color: blue;
+}
+table{
+    border-collapse:collapse;
+}
+table, td, th{
+    border:1px solid #778899;
+    padding: 5px;
+}
+caption{
+	width:100%;
+	height:40px;
+	color:#000000;
+	font-size: 16px;
+	padding-top:10px;
+}
+.ta_tab table{
+	border: none;
+}
+.t_warp_content td{
+	border: none;
+}
+td:first-child{
+	text-align: right;
+}
+td:last-child{
+	text-align: left;
+}
+.one_td{
+	font-size: 14px;
+	color: #000079;
+	padding-left:10px;
+	background: #E0EEEE; 
+}
+.foot_td{
+	width:100%;
+	height:60px;
+	line-height: 60px;
+}
+.foot_td td{
+	text-align: center;
+}
+.foot_td input{
+	width:80px;
+	height:30px
+}
+footer{
+	text-align: center;
+	height:60px;
+	position:relative;
+}
+footer p{
+    padding-top:18px;
+    color: #000000;   
+}
+footer span{
+	color: #778899;
+}

@@ -1,2 +1,21 @@
-xå\ksÉÕÎgªø+…$°e|YÂëCÂ.¼ÁÅ-©R5’ZÖ`iFïÌÛKøïïóœ¾L÷èê]²›ªèÖLwŸsúô¹Ÿ½qŞS{¾;¼ÿ‡İ]õ<Oj’fc]Ş¼qóÆç¤Pò|¢U¡ÿo–ºİêá¹ÕùŞ>Íõy88Â³|\\M« Â}÷2–‡sº»2+÷SŞL¥»;ã+™@BAû_uœZ¥Y¥‹,ûø@ñå+·&ç*™U#Ui?©Ò<“‘;7o(ÅıáOüÉòn•êé›7/…!º¬TŞû¤ûøS¨$sI©†ùxœ_”G©ŸÈ^ò•`@Ûò‰\2ÑÕ(©ÖOŞ´¶WÏcLÜ-t™ÏŠ¾Ş=|˜ïİîï¯[8ÊË
-+õe2™u·£^ƒjšXñàŞƒ{k&’Óy‘ş,Œa:8ŞŒş4<ûtø?ûŸôÖ¶ªÊã­½ƒïìïâE–g}}¼õéptp¶g}Yo•ùDï$ÓévI•``’ô·î¿:,Ş}—>¹ûÓËüjr÷ïŸôÓŸ?üø·ÕóŸ]Nò½ÏÓÓ|8
+{
+  "name": "lessbus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.6",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-less": "^3.3.0",
+    "gulp-sourcemaps": "^2.4.0"
+  }
+}

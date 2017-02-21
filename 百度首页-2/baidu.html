@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>百度一下，你就知道</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/baidu.css" media="screen and (min-device-width: 768px)" />
+	<link rel="stylesheet" type="text/css" href="css/badu-1.css" media="screen and (max-device-width: 767px)" />
+	<!--[if IE8]>
+	<style type="text/css">
+            .btn input:link{
+	            border: 1px solid #666;
+            }
+            button[type="submit"]{
+                filter:chroma(color=#000000);
+                border:none;
+            }
+            a:focus, *:focus {noFocusLine: expression(this.onFocus=this.blur());} 
+         </style>
+	<![endif]-->
+	<!--[if lt IE 9]>
+	<script src=“http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script>
+	<！［endif］--></head>
+<body>
+		<div class="wrap">
+			<header>
+				<div class="top">
+					<div class="weather">
+						<iframe name="weather_inc" src="http://i.tianqi.com/index.php?c=code&id=1" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+					</div>
+					<div class="login">
+					    <a id="login" class="icon-login" href="https://m.baidu.com/usrprofile?action=home&model=user&ori=index">
+					    	<img src="img/login.png" alt="">
+					    </a>
+					</div>
+				</div>
+				<!-- /top -->
+				<nav>
+					<ul>
+						<li id="pro_list">
+							<a href="http://www.baidu.com/more/" name="tj_briicon" id="tj_briicon">更多产品</a>
+						</li>
+						<li>
+							<a href="http://www.baidu.com/gaoji/preferences.html" name="tj_settingicon" class="pf">设置</a>
+						</li>
+						<li>
+							<a href="https://passport.baidu.com/v2/?login&amp;tpl=mn&amp;u=http%3A%2F%2Fwww.baidu.com%2F" name="tj_login" class="lb" onclick="return false;">登录</a>
+						</li>
+						<li>
+							<a href="http://tieba.baidu.com" name="tj_trtieba" class="mnav">贴吧</a>
+						</li>
+						<li>
+							<a href="http://v.baidu.com" name="tj_trvideo" class="mnav">视频</a>
+						</li>
+						<li>
+							<a href="http://map.baidu.com" name="tj_trmap" class="mnav">地图</a>
+						</li>
+						<li>
+							<a href="http://www.hao123.com" name="tj_trhao123" class="mnav">hao123</a>
+						</li>
+						<li>
+							<a href="http://news.baidu.com" name="tj_trnews" class="mnav">新闻</a>
+						</li>
+						<li>
+							<a href="http://www.nuomi.com/?cid=002540" name="tj_trnuomi" class="mnav">糯米</a>
+						</li>
+					</ul>
+					<nav>
+						<!-- /nav -->
+					</header>
+					<!-- /header -->
+					<aside id="list">
+						<ul>
+							<li>
+								<a href="http://music.baidu.com" name="tj_mp3">
+									<span class="product product_1"></span>
+									音乐
+								</a>
+							</li>
+							<li>
+								<a href="http://image.baidu.com" name="tj_img">
+									<span class="product product_2"></span>
+									图片
+								</a>
+							</li>
+							<li>
+								<a href="http://zhidao.baidu.com" name="tj_zhidao">
+									<span class="product product_3"></span>
+									知道
+								</a>
+							</li>
+							<li>
+								<a href="http://wenku.baidu.com" name="tj_wenku">
+									<span class="product product_4"></span>
+									文库
+								</a>
+							</li>
+							<li>
+								<a href="http://top.baidu.com" name="tj_bang">
+									<span class="product product_5"></span>
+									风云榜
+								</a>
+							</li>
+							<li>
+								<a href="//www.baidu.com/more/" name="tj_more">全部产品&gt;&gt;</a>
+							</li>
+						</ul>
+					</aside>
+					<!-- /aside -->
+					<article>
+						<div class="ar_wraper" style="overflow: auto;">
+							<div class="logo">
+								<img src="img/bd_logo.png" alt="百度logo"></div>
+							<!-- /logo -->
+							<div class="btn">
+								<form action="https://www.baidu.com/s" method="get" accept-charset="utf-8" target="_blank">
+									<input type="text" name="wd" autofocus="autofocus" value="">
+									<span></span>
+									<button type="submit">百度一下</button>
+								</form>
+							</div>
+							<!-- /btn -->
+							<div class="pic_content" style="display: none">
+								<form action="">
+									<div class="btn-2">
+										<input type="text" name="td" autocomplete="off" maxlength="255" placeholder="&nbsp;&nbsp;请输入内容">
+										<span class="soutu-url-wrap">请输入正确的图片地址</span>
+										<div class="photo">
+											<img src="img/photo3.png" alt=""></div>
+										<!-- /photo -->
+									</div>
+									<div class="pic_content_t">
+										<p>拖拽图片到这里</p>
+										<span class="append_pic"></span>
+									</div>
+									<!-- /pic_content_t -->
+									<div class="pic_content_b">
+										<button type="submit">
+											本地上传图片
+											<span class="local_pic"></span>
+										</button>
+										<span class="soutu-close"></span>
+									</div>
+									<!-- /pic_content_b-->
+								</form><!-- /form -->
+							</div>
+							<!-- /pic_content -->
+							<div class="navs">
+								<div class="navs_wrap">
+									<div class="navs_item_a">
+										<ul>
+											<li>
+												<a href="#" title="">
+													<span class="focus_icon"></span>
+													<p>关注</p>
+												</a>
+											</li>
+											<li>
+												<a href="http://m.news.baidu.com/">
+													<span class="news_icon"></span>
+													<p>新闻</p>
+												</a>
+											</li>
+											<li>
+												<a href="http://dushu.m.baidu.com/">
+													<span class="stroy_icon"></span>
+													<p>小说</p>
+												</a>
+											</li>
+											<li>
+												<a href="http://video.m.baidu.com/">
+													<span class="radio_icon"></span>
+													<p>视频</p>
+												</a>
+											</li>
+											<li>
+												<a href="https://m.nuomi.com">
+													<span class="nuomi_icon"></span>
+													<p>糯米</p>
+												</a>
+											</li>
+											<li>
+												<a href="http://map.baidu.com/">
+													<span class="map_icon"></span>
+													<p>地图</p>
+												</a>
+											</li>
+										</ul>
+									</div><!-- /navs_item_a -->
+									<div class="navs_item_b">
+										<ul>
+											<li>
+												<a href="" title="">
+													<span class="tieba_icon"></span>
+													<p>贴吧</p>
+												</a>
+											</li>
+											<li>
+												<a href="" title="">
+													<span class="pic_icon"></span>
+													<p>图片</p>
+												</a>
+											</li>
+											<li>
+												<a href="" title="">
+													<span class="url_icon"></span>
+													<p>网址</p>
+												</a>
+											</li>
+											<li>
+												<a href="" title="">
+													<span class="extend_icon"></span>
+													<p>推广</p>
+												</a>
+											</li>
+											<li>
+												<a href="" title="">
+													<span class="music_icon"></span>
+													<p>音乐</p>
+												</a>
+											</li>
+										</ul>
+									</div><!-- /navs_item_b -->
+								</div>
+								<ul class="navs_menu">
+									<li class="active"></li>
+									<li></li>
+								</ul>
+								<!--/navs_wrap-->
+							</div>
+							<!-- /navs -->
+							<div class="news_list_wraper">
+								<div class="news_item_a">
+									<a href="https://m.baidu.com/feed/data/landingpage?nid=14972092096531490812&amp;n_type=0&amp;p_from=2" class="inner-item" data-log="stype:yc:6;yc;picNum:yc:3;yc;title:yc:传说中的碰瓷党杀手，这辆玛莎拉蒂人见人怕！;yc;extra:yc:{&quot;category&quot;:-1,&quot;city&quot;:&quot;\u897f\u5b89&quot;,&quot;cs&quot;:&quot;1202343428 2419713172&quot;,&quot;district&quot;:&quot;&quot;,&quot;fe&quot;:&quot;&quot;,&quot;localname&quot;:&quot;&quot;,&quot;mark&quot;:0,&quot;mark_rec&quot;:0,&quot;mthid&quot;:&quot;&quot;,&quot;pfe&quot;:&quot;&quot;,&quot;province&quot;:&quot;\u9655\u897f&quot;,&quot;rec_src&quot;:[1],&quot;score&quot;:238195,&quot;srccat&quot;:10,&quot;srcid&quot;:80003,&quot;type&quot;:6,&quot;ua&quot;:&quot;640_1136_iphone_9.1_0&quot;,&quot;ut&quot;:&quot;iphone_9.1_0_apple&quot;};yc;logExtra:yc:{&quot;st&quot;:&quot;news&quot;,&quot;isBaijiahao&quot;:0,&quot;extra&quot;:&quot;{\&quot;category\&quot;:-1,\&quot;city\&quot;:\&quot;\\u897f\\u5b89\&quot;,\&quot;cs\&quot;:\&quot;1202343428 2419713172\&quot;,\&quot;district\&quot;:\&quot;\&quot;,\&quot;fe\&quot;:\&quot;\&quot;,\&quot;localname\&quot;:\&quot;\&quot;,\&quot;mark\&quot;:0,\&quot;mark_rec\&quot;:0,\&quot;mthid\&quot;:\&quot;\&quot;,\&quot;pfe\&quot;:\&quot;\&quot;,\&quot;province\&quot;:\&quot;\\u9655\\u897f\&quot;,\&quot;rec_src\&quot;:[1],\&quot;score\&quot;:238195,\&quot;srccat\&quot;:10,\&quot;srcid\&quot;:80003,\&quot;type\&quot;:6,\&quot;ua\&quot;:\&quot;640_1136_iphone_9.1_0\&quot;,\&quot;ut\&quot;:\&quot;iphone_9.1_0_apple\&quot;}&quot;,&quot;stype&quot;:6,&quot;rid&quot;:&quot;14972092096531490812&quot;,&quot;pos&quot;:&quot;11&quot;,&quot;picNum&quot;:3,&quot;title&quot;:&quot;\u4f20\u8bf4\u4e2d\u7684\u78b0\u74f7\u515a\u6740\u624b\uff0c\u8fd9\u8f86\u739b\u838e\u62c9\u8482\u4eba\u89c1\u4eba\u6015\uff01&quot;};yc;" data-rid="14972092096531490812" data-pos="11" data-mib="1" data-orilink="http://mini.eastday.com/mobile/161204103708123.html">
+										<div class="text-content">
+											<h2>
+												传说中的碰瓷党杀手，这辆玛莎拉蒂人见人怕！
+												<span class="hotRec hotRec0"></span>
+											</h2>
+										</div>
+										<div class="pic-content">
+											<div class="img-wrap">
+												<img src="img/u=1.JPEG"></div>
+											<div class="img-wrap">
+												<img src="img/u=2.JPEG"></div>
+											<div class="img-wrap">
+												<img src="img/u=3.JPEG""></div>
+										</div>
+										<div class="news-from">
+											<span class="src-net">东方头条</span>
+											<span class="src-time">12-04</span>
+										</div>
+									</a>
+								</div>
+								<!-- /news_item_a -->
+								<div class="news_item_b">
+									<a href="https://m.baidu.com/feed/data/landingpage?nid=16511625042353393513&amp;n_type=0&amp;p_from=2" class="inner-item" data-log="stype:yc:6;yc;picNum:yc:3;yc;title:yc:真正的国产扛把子，十个月卖出近43万，售价9万起很被难超越;yc;extra:yc:{&quot;category&quot;:-1,&quot;city&quot;:&quot;\u897f\u5b89&quot;,&quot;cs&quot;:&quot;3185714412 56782717&quot;,&quot;district&quot;:&quot;&quot;,&quot;fe&quot;:&quot;&quot;,&quot;localname&quot;:&quot;&quot;,&quot;mark&quot;:0,&quot;mark_rec&quot;:0,&quot;mthid&quot;:&quot;&quot;,&quot;pfe&quot;:&quot;&quot;,&quot;province&quot;:&quot;\u9655\u897f&quot;,&quot;rec_src&quot;:[1],&quot;score&quot;:223028,&quot;srccat&quot;:10,&quot;srcid&quot;:80003,&quot;type&quot;:6,&quot;ua&quot;:&quot;640_1136_iphone_9.1_0&quot;,&quot;ut&quot;:&quot;iphone_9.1_0_apple&quot;};yc;logExtra:yc:{&quot;st&quot;:&quot;news&quot;,&quot;isBaijiahao&quot;:0,&quot;extra&quot;:&quot;{\&quot;category\&quot;:-1,\&quot;city\&quot;:\&quot;\\u897f\\u5b89\&quot;,\&quot;cs\&quot;:\&quot;3185714412 56782717\&quot;,\&quot;district\&quot;:\&quot;\&quot;,\&quot;fe\&quot;:\&quot;\&quot;,\&quot;localname\&quot;:\&quot;\&quot;,\&quot;mark\&quot;:0,\&quot;mark_rec\&quot;:0,\&quot;mthid\&quot;:\&quot;\&quot;,\&quot;pfe\&quot;:\&quot;\&quot;,\&quot;province\&quot;:\&quot;\\u9655\\u897f\&quot;,\&quot;rec_src\&quot;:[1],\&quot;score\&quot;:223028,\&quot;srccat\&quot;:10,\&quot;srcid\&quot;:80003,\&quot;type\&quot;:6,\&quot;ua\&quot;:\&quot;640_1136_iphone_9.1_0\&quot;,\&quot;ut\&quot;:\&quot;iphone_9.1_0_apple\&quot;}&quot;,&quot;stype&quot;:6,&quot;rid&quot;:&quot;16511625042353393513&quot;,&quot;pos&quot;:3,&quot;picNum&quot;:3,&quot;title&quot;:&quot;\u771f\u6b63\u7684\u56fd\u4ea7\u625b\u628a\u5b50\uff0c\u5341\u4e2a\u6708\u5356\u51fa\u8fd143\u4e07\uff0c\u552e\u4ef79\u4e07\u8d77\u5f88\u88ab\u96be\u8d85\u8d8a&quot;};yc;" data-rid="16511625042353393513" data-pos="3" data-mib="1" data-orilink="http://toutiao.com/a6360185606156861698">
+										<div class="text-content">
+											<h2>
+												真正的国产扛把子，十个月卖出近43万，售价9万起很被难超越
+												<span class="hotRec hotRec0"></span>
+											</h2>
+										</div>
+										<div class="pic-content">
+											<div class="img-wrap">
+												<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1180353873,719781376&amp;fm=170&amp;s=D4D37A8B4842B2D696D8D90B03003081&amp;w=218&amp;h=146&amp;img.JPEG"></div>
+											<div class="img-wrap">
+												<img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=3104817507,2271302191&amp;fm=170&amp;s=25D27A845D1286C6071C7C8C0300E090&amp;w=218&amp;h=146&amp;img.JPEG"></div>
+											<div class="img-wrap">
+												<img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=1008375614,1083513066&amp;fm=170&amp;s=E60223A9A04096E648A5ED830300B081&amp;w=218&amp;h=146&amp;img.JPEG"></div>
+										</div>
+										<div class="news-from">
+											<span class="src-net">互联网</span>
+											<span class="src-time">12-04</span>
+											<span class=""></span>
+										</div>
+									</a>
+								</div><!-- /news_item_b -->
+								<div class="news_item_c">
+									<a href="https://m.baidu.com/feed/data/landingpage?nid=17339023671969910199&amp;n_type=0&amp;p_from=2" class="inner-item clr" data-log="stype:yc:0;yc;picNum:yc:1;yc;title:yc:三星NOTE7爆炸揭秘：明知其有问题还推向市场;yc;extra:yc:{&quot;category&quot;:-1,&quot;city&quot;:&quot;\u897f\u5b89&quot;,&quot;cs&quot;:&quot;3227477541 1442511340&quot;,&quot;district&quot;:&quot;&quot;,&quot;fe&quot;:&quot;&quot;,&quot;localname&quot;:&quot;&quot;,&quot;mark&quot;:1,&quot;mark_rec&quot;:1,&quot;mthid&quot;:&quot;&quot;,&quot;pfe&quot;:&quot;&quot;,&quot;province&quot;:&quot;\u9655\u897f&quot;,&quot;rec_src&quot;:[1],&quot;score&quot;:95625.1,&quot;srccat&quot;:8,&quot;srcid&quot;:6006,&quot;type&quot;:0,&quot;ua&quot;:&quot;640_1136_iphone_9.1_0&quot;,&quot;ut&quot;:&quot;iphone_9.1_0_apple&quot;};yc;logExtra:yc:{&quot;st&quot;:&quot;news&quot;,&quot;isBaijiahao&quot;:0,&quot;extra&quot;:&quot;{\&quot;category\&quot;:-1,\&quot;city\&quot;:\&quot;\\u897f\\u5b89\&quot;,\&quot;cs\&quot;:\&quot;3227477541 1442511340\&quot;,\&quot;district\&quot;:\&quot;\&quot;,\&quot;fe\&quot;:\&quot;\&quot;,\&quot;localname\&quot;:\&quot;\&quot;,\&quot;mark\&quot;:1,\&quot;mark_rec\&quot;:1,\&quot;mthid\&quot;:\&quot;\&quot;,\&quot;pfe\&quot;:\&quot;\&quot;,\&quot;province\&quot;:\&quot;\\u9655\\u897f\&quot;,\&quot;rec_src\&quot;:[1],\&quot;score\&quot;:95625.1,\&quot;srccat\&quot;:8,\&quot;srcid\&quot;:6006,\&quot;type\&quot;:0,\&quot;ua\&quot;:\&quot;640_1136_iphone_9.1_0\&quot;,\&quot;ut\&quot;:\&quot;iphone_9.1_0_apple\&quot;}&quot;,&quot;stype&quot;:0,&quot;rid&quot;:&quot;17339023671969910199&quot;,&quot;pos&quot;:12,&quot;picNum&quot;:1,&quot;title&quot;:&quot;\u4e09\u661fNOTE7\u7206\u70b8\u63ed\u79d8\uff1a\u660e\u77e5\u5176\u6709\u95ee\u9898\u8fd8\u63a8\u5411\u5e02\u573a&quot;};yc;" data-rid="17339023671969910199" data-pos="12" data-mib="1" data-orilink="http://games.sina.com.cn/g/g/2016-12-05/fxyiayq2326154.shtml">
+										<div class="pic-content">
+											<img src="img/u=4.JPEG"></div>
+										<div class="info-content">
+											<div class="text-content">
+												<h2>三星NOTE7爆炸揭秘：明知其有问题还推向市场</h2>
+											</div>
+											<div class="news-from">
+												<span class="src-net">新浪游戏</span>
+												<span class="src-time">10:54</span>
+												<span class="src-icon-hot">热点</span>
+											</div>
+										</div>
+									</a>
+								</div>
+								<!-- /news_item_c -->
+								<div class="news_item_d">
+									<a href="https://m.baidu.com/feed/data/landingpage?nid=7258978247241691382&amp;n_type=0&amp;p_from=2" class="inner-item clr" data-log="stype:yc:0;yc;picNum:yc:1;yc;title:yc:关晓彤穿2万的羽绒服被吐槽 这次穿了3千的;yc;extra:yc:{&quot;category&quot;:-1,&quot;city&quot;:&quot;\u897f\u5b89&quot;,&quot;cs&quot;:&quot;3132625519 1675845742&quot;,&quot;district&quot;:&quot;&quot;,&quot;fe&quot;:&quot;&quot;,&quot;localname&quot;:&quot;&quot;,&quot;mark&quot;:1,&quot;mark_rec&quot;:1,&quot;mthid&quot;:&quot;&quot;,&quot;pfe&quot;:&quot;&quot;,&quot;province&quot;:&quot;\u9655\u897f&quot;,&quot;rec_src&quot;:[1],&quot;score&quot;:61539.7,&quot;srccat&quot;:8,&quot;srcid&quot;:6238,&quot;type&quot;:0,&quot;ua&quot;:&quot;640_1136_iphone_9.1_0&quot;,&quot;ut&quot;:&quot;iphone_9.1_0_apple&quot;};yc;logExtra:yc:{&quot;st&quot;:&quot;news&quot;,&quot;isBaijiahao&quot;:0,&quot;extra&quot;:&quot;{\&quot;category\&quot;:-1,\&quot;city\&quot;:\&quot;\\u897f\\u5b89\&quot;,\&quot;cs\&quot;:\&quot;3132625519 1675845742\&quot;,\&quot;district\&quot;:\&quot;\&quot;,\&quot;fe\&quot;:\&quot;\&quot;,\&quot;localname\&quot;:\&quot;\&quot;,\&quot;mark\&quot;:1,\&quot;mark_rec\&quot;:1,\&quot;mthid\&quot;:\&quot;\&quot;,\&quot;pfe\&quot;:\&quot;\&quot;,\&quot;province\&quot;:\&quot;\\u9655\\u897f\&quot;,\&quot;rec_src\&quot;:[1],\&quot;score\&quot;:61539.7,\&quot;srccat\&quot;:8,\&quot;srcid\&quot;:6238,\&quot;type\&quot;:0,\&quot;ua\&quot;:\&quot;640_1136_iphone_9.1_0\&quot;,\&quot;ut\&quot;:\&quot;iphone_9.1_0_apple\&quot;}&quot;,&quot;stype&quot;:0,&quot;rid&quot;:&quot;7258978247241691382&quot;,&quot;pos&quot;:2,&quot;picNum&quot;:1,&quot;title&quot;:&quot;\u5173\u6653\u5f64\u7a7f2\u4e07\u7684\u7fbd\u7ed2\u670d\u88ab\u5410\u69fd \u8fd9\u6b21\u7a7f\u4e863\u5343\u7684&quot;};yc;" data-rid="7258978247241691382" data-pos="2" data-mib="1" data-orilink="http://lady.163.com/16/1205/11/C7H6FLIC00267VOB.html">
+										<div class="pic-content">
+											<img src="img/u=5.PNG"></div>
+										<div class="info-content">
+											<div class="text-content">
+												<h2>关晓彤穿2万的羽绒服被吐槽 这次穿了3千的</h2>
+											</div>
+											<div class="news-from">
+												<span class="src-net">网易新闻</span>
+												<span class="src-time">12:11</span>
+												<span class="src-icon-hot">热点</span>
+											</div>
+										</div>
+									</a>
+								</div>
+								<!-- /news_item_d -->
+							</div>
+							<!-- /news_list_wraper -->
+						</div>
+						<!-- /ar_wraper -->
+					</article>
+					<!-- /article -->
+					<footer>
+						<div class="foot_wraper">
+							<div class="foot_left">
+								<img src="img/2.png" alt="手机百度二维码">
+								<p>
+									手机百度
+									<br/>
+									快人一步
+								</p>
+							</div>
+							<!-- /foot_left -->
+							<div class="foot_middle">
+								<img src="img/1.png" alt="百度糯米二维码">
+								<p>
+									百度糯米
+									<br/>
+									一元大餐
+								</p>
+							</div>
+							<!-- /foot_middle -->
+							<div class="foot_right">
+								<p id="lh">
+									<a href="//www.baidu.com/cache/sethelp/help.html" target="_blank">把百度设为主页</a>
+									<a href="http://home.baidu.com">关于百度</a>
+									<a href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+									<a href="http://e.baidu.com/?refer=888">百度推广</a>
+								</p>
+								<p id="cp">
+									©2016&nbsp;Baidu&nbsp;
+									<a href="http://www.baidu.com/duty/">使用百度前必读</a>
+									&nbsp;
+									<a href="http://jianyi.baidu.com/">意见反馈</a>
+									&nbsp;京ICP证030173号&nbsp;
+									<span class="foot_logo_b"></span>
+								</p>
+								<span class="foot_logo_a"></span>
+								<a id="jgwab" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+							</div>
+							<!-- /foot_right -->
+						</div>
+						<!-- /foot_wraper -->
+					</footer>
+					<!-- /footer -->
+				</div>
+				<!-- /warp-->
+				<script src="js/baidu.js" type="text/javascript"></script>
+</body>
+			</html>

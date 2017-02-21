@@ -1,0 +1,120 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-size: 12px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover,a:active{
+	text-decoration: underline;
+	color: red;
+}
+body{
+	background: url(../image/bg.jpg);
+}
+.warp{
+	width: 810px;
+	height: 406px;
+	border: 1px solid red;
+	border-radius: 20px/20px;
+	background: white;
+	margin: 20px auto;
+}
+header{
+	width: 100%;
+	height: 82px;
+}
+.pic{
+	width: 180px;
+	height: 76px;
+	padding: 3px 40px 3px 0;
+	margin-left: 29px;
+	background: url(../image/qdjjlogo.gif) no-repeat;
+	background-origin:content-box;
+	float: left;
+}
+.title_list{
+	width: 532px;
+	height: 100%;
+	float: left;
+	position: relative;
+}
+.title_list ul{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+}
+.title_list li{
+	float: right;
+	margin: 5px 12px;
+}
+nav{
+	width: 780px;
+	height: 28px;
+	background: #eaeaea;
+	margin-left: 15px;
+	border-radius: 28px/28px;
+	position: relative;
+}
+nav ul{
+	width: 580px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100px;
+}
+nav li{
+	font:16px/28px "微软雅黑";
+	float: left;
+    padding-left: 10px;
+}
+nav li:nth-of-type(3) a{
+	color: red;
+}
+article{
+	width: 780px;
+	height: 220px;
+	margin-left: 15px;
+}
+aside{
+	width: 100%;
+	height: 52px;
+}
+aside p{
+	padding-top:18px; 
+	color: red;
+	font: bold 18px/25px "微软雅黑";
+}
+.content{
+	width: 510px;
+	height: 167px;
+	margin: 0 135px;
+	border: 1px solid red;
+}
+.content input{
+	width: 150px;
+	height: 23px;
+	
+}
+.content button{
+	width: 55px;
+	height: 22px;
+	border: 1px solid blue;
+	border-radius: 6px;
+}
+footer{
+	width: 780px;
+	height: 76px;
+	margin-left: 15px;
+	text-align: center;
+}
+footer p{
+    padding-top:18px;   
+}
+footer span{
+	color: #778899;
+}
